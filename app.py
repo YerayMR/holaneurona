@@ -4,7 +4,7 @@ import streamlit as st
 st.title("¡Hola neurona!")
 
 # Imagen de la neurona
-st.image("image.png", caption="Neurona", use_column_width=True)
+st.image("img.png", caption="Neurona", use_column_width=True)
 
 # Crear las pestañas
 tabs = st.tabs(["Una entrada", "Dos entradas", "Tres entradas y sesgo"])
