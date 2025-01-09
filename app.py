@@ -1,10 +1,16 @@
 import streamlit as st
+from PIL import Image
+import os
 
 # Título de la página
 st.title("¡Hola neurona!")
 
 # Imagen de la neurona
-st.image("img.png", caption="Neurona", use_container_width=True)
+image_path = "img.png"
+if os.path.exists(image_path):
+    st.image(image_path, caption="Neurona", use_container_width=True)
+else:
+    st.error("La imagen 'img.png' no se encuentra en el directorio.")
 
 # Crear las pestañas
 tabs = st.tabs(["Una entrada", "Dos entradas", "Tres entradas y sesgo"])
