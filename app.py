@@ -6,7 +6,7 @@ import os
 st.title("¡Hola neurona!")
 
 # Imagen de la neurona
-image_path = "img.jpg"
+image_path = "img.png"
 if os.path.exists(image_path):
     st.image(image_path, caption="Neurona", use_container_width=True)
 else:
